@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Level 3/Main Mennu.unity
+    guid: d7d4c89b585194f4cb2b966f531bfd11
+  - enabled: 1
+    path: Assets/Level 3/Cutscene.unity
+    guid: 72513873e8af6ca4fb8f7eeae120a337
   m_configObjects: {}
