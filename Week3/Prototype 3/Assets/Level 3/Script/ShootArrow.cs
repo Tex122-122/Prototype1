@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShootArrow : MonoBehaviour
 {
    public GameObject Arrow;
-    public float speed = 100f;
+    public float speed = 10000f;
 
     private void Update()
     {
