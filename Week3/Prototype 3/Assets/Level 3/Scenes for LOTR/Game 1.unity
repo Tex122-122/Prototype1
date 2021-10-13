@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 594641666}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -738,8 +738,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba76f1c68aa496443b9097f4154e3325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Camera: {fileID: 594641663}
   Arrow: {fileID: 350257581260043817, guid: e48d7a67ffbc66c4da9075f083893c9e, type: 3}
+  speed: 100
 --- !u!1001 &1467175522
 PrefabInstance:
   m_ObjectHideFlags: 0

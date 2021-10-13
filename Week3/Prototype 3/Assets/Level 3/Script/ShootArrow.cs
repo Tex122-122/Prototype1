@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class ShootArrow : MonoBehaviour
 {
-    public Transform Camera;
-    public GameObject Arrow;
+   public GameObject Arrow;
     public float speed = 100f;
 
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            GameObject arrow = Instantiate(Arrow, transform.position, Camera.rotation);
-            arrow.transform.rotation = Quaternion.Euler(Camera.forward);
+            GameObject arrow = Instantiate(Arrow, transform.position, Arrow.transform.rotation);
+            arrow.transform.rotation = Quaternion.LookRotation(-Camera.main.transform.forward, Camera.main.transform.up);
             Rigidbody arrowRB = arrow.GetComponent<Rigidbody>();
-            arrowRB.AddForce(arrow.transform.forward * speed);
+            arrowRB.AddForce(-arrow.transform.forward * speed);
         }
     }
 }
