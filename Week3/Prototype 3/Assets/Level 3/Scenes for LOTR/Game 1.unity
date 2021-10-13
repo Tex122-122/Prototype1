@@ -540,7 +540,7 @@ GameObject:
   - component: {fileID: 2051299921}
   - component: {fileID: 2051299920}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -563,7 +563,7 @@ MonoBehaviour:
   maxXPos: 150.05
   minZPos: 143.8
   maxZPos: 107.6
-  enemyCount: 18
+  enemyCount: 30
 --- !u!4 &2051299921
 Transform:
   m_ObjectHideFlags: 0
@@ -595,7 +595,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5127772043834430501, guid: 0583803835837134aa7542f6ee1c7d7b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: 1.62
       objectReference: {fileID: 0}
     - target: {fileID: 5127772043834430501, guid: 0583803835837134aa7542f6ee1c7d7b, type: 3}
       propertyPath: m_LocalPosition.z
