@@ -6,12 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Level 3/Scenes for LOTR/Main Mennu.unity
-    guid: d7d4c89b585194f4cb2b966f531bfd11
+    path: Assets/Week4/Week 4 scenes/Main Menu.unity
+    guid: e5d4d82935dc1cf41b2365b5e990bb13
   - enabled: 1
-    path: Assets/Level 3/Scenes for LOTR/Cutscene.unity
-    guid: 72513873e8af6ca4fb8f7eeae120a337
-  - enabled: 1
-    path: Assets/Level 3/Scenes for LOTR/Game 1.unity
-    guid: ec946bcb6aa6cd7408f1eba31fe04b84
+    path: Assets/Week4/Week 4 scenes/Dodgeball game.unity
+    guid: c740d294c1ec7c346a4f933c67a219f8
   m_configObjects: {}
