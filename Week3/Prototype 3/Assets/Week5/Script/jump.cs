@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
+    public float RotationForce = 5;
+    public float JumpForce = 100;
     private Rigidbody rb;
     void Start()
     {
@@ -23,12 +25,12 @@ public class Jump : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 rb.velocity = Vector3.zero;
-                rb.AddForce(Vector2.up * 55000);
+                rb.AddForce(Vector2.up * JumpForce, ForceMode.Impulse);
             }
         }
         else
         {
-            transform.Rotate(Vector3.back * 5f);
+            transform.Rotate(Vector3.back * RotationForce);
         }
     }
 }
