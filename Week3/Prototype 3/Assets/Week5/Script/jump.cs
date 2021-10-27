@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
-    public float RotationForce = ;
+    public float RotationForce;
     public float JumpForce = 100;
     private Rigidbody rb;
     void Start()
