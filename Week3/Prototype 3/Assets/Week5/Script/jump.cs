@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
+    public Transform Player;
     public float RotationForce;
     public float JumpForce = 100;
     private Rigidbody rb;
@@ -19,9 +20,9 @@ public class Jump : MonoBehaviour
         rb.velocity = vel;
         if (Physics.Raycast(transform.position, Vector3.down, GetComponent<BoxCollider>().size.y / 2 + 0.4f))
         {
-            Quaternion rot = transform.rotation;
+            Quaternion rot = Player.rotation;
             rot.z = Mathf.Round(rot.z / 90) * 90;
-            transform.rotation = rot;
+            Player.rotation = rot;
             if (Input.GetMouseButtonDown(0))
             {
                 rb.velocity = Vector3.zero;
@@ -30,7 +31,7 @@ public class Jump : MonoBehaviour
         }
         else
         {
-            transform.Rotate(Vector3.back * RotationForce);
+            Player.Rotate(Vector3.back * RotationForce);
         }
     }   
 }
