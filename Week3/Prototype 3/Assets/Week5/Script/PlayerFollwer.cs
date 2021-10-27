@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class PlayerFollwer : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject Player;
 
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
-        
+        this.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, this.transform.position.z); 
+
     }
 }
