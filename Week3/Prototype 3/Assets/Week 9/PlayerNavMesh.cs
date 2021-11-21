@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class PlayerNavMesh : MonoBehaviour
 {
-    [SerializeField] private Transform movePositionTransform;
+    [SerializeField] private Transform MovePositionTransform;
 
     private NavMeshAgent navMeshAgent;
     private void Awake()
@@ -14,6 +14,6 @@ public class PlayerNavMesh : MonoBehaviour
     }
     private void Update()
     {
-        navMeshAgent.destination = movePositionTransform.position;   
+        navMeshAgent.destination = MovePositionTransform.position;   
     }
 }
