@@ -34,7 +34,9 @@ void Start()
  {
     UpdateMouseLook();
     UpdateMovement();
- }
+        Debug.Log(Input.GetAxis("Horizontal").ToString());
+        Debug.Log(Input.GetAxis("Vertical").ToString());
+    }
 
  void UpdateMouseLook()
  {
@@ -61,6 +63,7 @@ void Start()
 
     controller.Move(velocity * Time.deltaTime);
  }
+
 }
 
 
