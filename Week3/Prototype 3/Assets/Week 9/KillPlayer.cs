@@ -19,7 +19,7 @@ public class KillPlayer : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player1"))
         {
             SceneManager.LoadScene(Respawn);
         }

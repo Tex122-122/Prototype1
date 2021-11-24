@@ -8,7 +8,7 @@ public class End_Screen : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player1")
         {
             EndScreen.gameObject.SetActive(true);
         }
