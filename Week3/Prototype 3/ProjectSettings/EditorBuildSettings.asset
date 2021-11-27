@@ -11,7 +11,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Week 10/Levels/Happy.unity
     guid: 7d4eae7e329594c44977fd775da1fd79
-  - enabled: 1
-    path: Assets/Week 10/Levels/Nightmare.unity
-    guid: 3bfa26b7052d3b74485a4dae7a7bfab5
   m_configObjects: {}
